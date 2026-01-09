@@ -1,10 +1,30 @@
+
+body {
+    background-color: aqua;
+}
+
 p {
     color: lightseagreen;
     background-color: black;
     border-radius: 20px;
+    width: 500px;
 }
 
 .deux {
     color: brown;
     background-color: aqua;
+}
+
+img {
+    height: 100px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    border-color: white;
+    box-shadow: 20px yellow;
+}
+
+button {
+    background-color: chocolate;
+    border-radius: 50px;
 }
