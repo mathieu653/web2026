@@ -45,7 +45,7 @@ Cascading Style Sheet : page de style en cascade
 
 On peut écrire du CSS :
 - directement dans le fishier HTML entre les balises `<style></style>`
-- dans un fishier `.css`
+- dans un fishier `.css` en indiquant le chemin dans le fichier HTML grâce 
 
 Pour écrire du CSS, il faut un sélécteur (nom d'une balise ou d'une class), des accolades, des propriétés, et des valeurs.
 
@@ -58,7 +58,19 @@ selecteur {
 ```
 
 Il existe plus de 500 propriétés et encore davantage de valeur possibles. Cependant, les valeurs sont souvent :
-- une couleur
-- une taille
+- une couleur : un nom, un code (rgb(0-255, 0-255, 0-255))
+- une taille : il existe de nombreuses unités, pixels (px), pourcentage (%)
 
 Rem : on trouve toures les propriétés sur le site des développeur de mozila
+
+Les propriétés CSS s'applique en cascade : des éléments les plus globaux (`body`, `div`) vers les éléments les plus internes (pour finir par les classes).
+
+Rem : principe de modèle en boîte
+Les éléments d'une page sont contenus dans une boîte entourée d'une bordure (invisible par defaut).
+L'espace entre : 
+- le contenu et la bordure s'appelle `padding`
+- la bordure et les éléments autour s'appelle `margin`
+
+La bordure `border` peut même avoir un style.
+
+Il existe de nombreuse 
