@@ -88,3 +88,13 @@ rem: Une balise `<button></button>` a été spécifiquement créée pour les bou
 On peut écrire le JS directement :
 - dans le fichier HTML entre des balises `<script></script>`
 - dans un fichier externe avec l'extension .js
+
+On utilise la balise `script` pour lier le fichier js.
+
+JS est utile pour réagir au évènements : `click`, `change`, `mouseover`, ...
+
+La syntaxe basique est :
+```js
+elementHTML.addEventListener(`evenement`,function() {...});
+
+```

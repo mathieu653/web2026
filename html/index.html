@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/style2.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Debuter en html</title>
@@ -47,21 +47,57 @@
         <a href="contact.html"><img src="../img/Micket.png" id="monImage"></a>
 
         <form action="">
-            <input type="range" name="range" id="range">
+            <input type="range" name="range" id="range" min="0" max="500" value="200">
             <input type="text" name="text" id="text" value="azerty">
+            <input type="button" name="button" id="button">
+            <input type="checkbox" name="checkbox" id="checkbox" value="check1">
+            <input type="password" name="password" id="password">
 
         </form>
 
+        <script src="../js/script.js"></script>
         <form action="">
             <script>
-                //let curseur = querySelector("input");
+                let titre = document.querySelector("h1");
+                titre.textContent = "Nouveau titre";
+                bouton.addEventListener('click', function(){
+                    titre.textContent = "Titre modifié au clic";
+                });
+
+                let pression = false;
+                let bouton = document.getElementById("button");
+                bouton.addEventListener('click', function(){
+                    if (pression == false) {
+                        titre.textContent = "Titre modifié au clic";
+                        titre.style.color = "red";
+                        pression = true;
+                    }
+                    else {
+                        titre.textContent = "titre de base";
+                        titre.style.color = "black";
+                        pression = false;
+                    }
+                });
+
+                //let curseur = document.querySelector("input");
                 //console.log(curseur);
                 //console.log(curseur.value);
-                let curseur = document.getElementById("text");
-                console.log(curseur);
-                console.log(curseur.value);
+                //curseur.addEventListener('change', function(){
+                //    console.log(curseur.value);
+                //});
+
+                //let text = document.querySelector("#text");
+                //console.log(text);
+                //console.log(text.value);
+
+                //let curseur = document.getElementById("text");
+                //console.log(curseur);
+                //console.log(curseur.value);
+
+                //let box = document.getElementById("checkbox");
+                //console.log(box);
+                //console.log(box.checked);
             </script>
         </form>
-
     </body>
 </html>
