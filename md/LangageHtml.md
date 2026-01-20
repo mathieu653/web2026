@@ -73,4 +73,18 @@ L'espace entre :
 
 La bordure `border` peut même avoir un style.
 
-Il existe de nombreuse 
+3. Javascript (JS)
+
+C'est le langage de programation qui permet de gérer les éléments d'interactions étaient placés dans un formulaire `<form></form>` pour renvoyer des info. au serveur.
+
+Dans le formulaire on place les éléments `<input type="">` :
+- type="text"
+- type="checkbox"
+- type="button"
+- type="range"
+
+rem: Une balise `<button></button>` a été spécifiquement créée pour les boutons
+
+On peut écrire le JS directement :
+- dans le fichier HTML entre des balises `<script></script>`
+- dans un fichier externe avec l'extension .js

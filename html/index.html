@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Debuter en html</title>
@@ -43,10 +44,24 @@
             </ol>
         </P>
 
-        <img src="./img/Micket.png">
+        <a href="contact.html"><img src="../img/Micket.png" id="monImage"></a>
 
+        <form action="">
+            <input type="range" name="range" id="range">
+            <input type="text" name="text" id="text" value="azerty">
 
+        </form>
 
+        <form action="">
+            <script>
+                //let curseur = querySelector("input");
+                //console.log(curseur);
+                //console.log(curseur.value);
+                let curseur = document.getElementById("text");
+                console.log(curseur);
+                console.log(curseur.value);
+            </script>
+        </form>
 
     </body>
 </html>
