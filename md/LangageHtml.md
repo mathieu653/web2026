@@ -98,3 +98,43 @@ La syntaxe basique est :
 elementHTML.addEventListener(`evenement`,function() {...});
 
 ```
+
+Ctrl + Shift + i pour obtenir la console
+
+Image simplifiée du DOM (Document Object Model) :
+
+window
+├── alert()
+└── document
+    ├── getElementById()
+    ├── querySelector()
+    │       ↓
+    │   élément HTML
+    │       ├── innerHTML
+    │       ├── style
+    │       │     ├── color
+    │       │     ├── backgroundColor
+    │       │     └── display
+    │       └── addEventListener()
+
+querySelector()
+getElementById()
+On écrira :
+
+let elementHTML = document.querySelector(""); //avec un sélecteur css
+
+let elementHTML = document.getElementById(""); // avec un id
+La plupart des éléments HTML interactifs ont une propriété value.
+
+console.log(elementHTML.value);
+JS est capable d'associer un évènement à un élément HTML:
+
+click
+change
+input
+mouseover ....
+On utilise la méthode addEventListener()
+
+elementHTML.addEventListener("event", function(){
+// faire qqchose
+});
