@@ -53,7 +53,7 @@ Une commande s'écrit après le prompt qui se termine par le symbole `$`
 |`cd`|changer de répertoire courant|`$ cd ./monDossier`|
 |`cp`|copier une source vers une destination|`$ cp /monFichier /monDossier`|
 |`rm`|supprimer des fichiers ou des dossiers|`$ rm -r ./monDossier`|
-|`mv`|couper/renommer des fichiers|`$ `|
+|`mv`|couper/renommer des fichiers|`$`|
 
 -----------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles :
